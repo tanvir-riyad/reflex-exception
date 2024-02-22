@@ -1,0 +1,8 @@
+*.db
+
+*.py[cod]
+
+.web/
+.web\node_modules
+
+__pycache__/
