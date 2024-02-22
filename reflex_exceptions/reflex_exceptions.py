@@ -27,7 +27,10 @@ def index() -> rx.Component:
         ),
         height="100vh",
     )
+def custom_exception_handler(exception):
+    print(f"custom exception handler called: {exception}") 
 
+app = rx.App(exception_handler=custom_exception_handler)
 
 app = rx.App()
 app.add_page(index)
